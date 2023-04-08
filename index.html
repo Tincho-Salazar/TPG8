@@ -61,14 +61,12 @@
             <img src="./images/logo_grande.png" alt="Logo" />
           </div>
           <div class="descripcion">
-            <p><span>
-                <h1>Estilo escandinavo</h1>
-                <h3><em>"La belleza en la simplicidad"</em>
-                  <p>Líneas limpias, colores claros y minimalismo</p>
-                  <p>Menos es más, la decoración debe ser funcional y acogedora</p>
-                  <p>Una decoración elegante y contemporánea</p>
-                </h3>
-              </span></p>
+            <p><span><p><h1><strong>Estilo escandinavo</strong></h1></p>
+            <p><h3><em>"La belleza en la simplicidad"</em></h3></p>
+            <p style="text-align:center; font-size: 1.5rem;">Líneas limpias, colores claros y minimalismo.<br>
+              Menos es más, la decoración debe ser funcional y acogedora.<br>
+              Una decoración elegante y contemporánea.</p>
+            </span></p>
           </div>
         </div>
         <div class="carousel-item">
@@ -77,14 +75,11 @@
             <img src="./images/logo_grande.png" alt="Logo" />
           </div>
           <div class="descripcion">
-            <p><span>
-                <h1>Estilo bohemio</h1>
-                <h3><em>"Caos creativo"</em>
-                  <p>Mezcla y combinación de patrones y texturas</p>
-                  <p>Inspirado en culturas y viajes</p>
-                  <p>Una decoración ecléctica y pbre</p>
-                </h3>
-              </span></p>
+            <p><span><p><h1><strong>Estilo bohemio</strong></h1></p>
+            <p><h3><em>"Caos creativo"</em></h3></p>
+            <p style="text-align:center; font-size: 1.5rem;">Mezcla y combinación de patrones y texturas<br>
+              Inspirado en culturas y viajes<br>Una decoración ecléctica y pobre</p>
+            </span></p>
           </div>
         </div>
         <div class="carousel-item">
@@ -93,14 +88,12 @@
             <img src="./images/logo_grande.png" alt="Logo" />
           </div>
           <div class="descripcion">
-            <p><span>
-                <h1>Estilo industrial</h1>
-                <h3><em>"La belleza en la aspereza"</em>
-                  <p>Caracterizado por el uso de materiales brutos y expuestos </p>
-                  <p>Inspirado en antiguas fábricas y almacenes</p>
-                  <p>Una decoración audaz y urbana</p>
-                </h3>
-              </span></p>
+            <p><span><p><h1><strong>Estilo industrial</strong></h1></p>
+            <p><h3><em>"La belleza en la aspereza"</em></h3></p>
+            <p style="text-align:center; font-size: 1.5rem;">Caracterizado por el uso de materiales brutos y
+              expuestos<br>
+              Inspirado en antiguas fábricas y almacenes<br>Una decoración audaz y urbana</p>
+            </span></p>
           </div>
         </div>
         <div class="carousel-item">
@@ -109,14 +102,11 @@
             <img src="./images/logo_grande.png" alt="Logo" />
           </div>
           <div class="descripcion">
-            <p><span>
-                <h1>Estilo clásico</h1>
-                <h3><em>"La elegancia perdura"</em>
-                  <p>Patrones y detalles refinados y simétricos</p>
-                  <p>Inspirado en la arquitectura clásica y la antigüedad</p>
-                  <p>Una decoración sofisticada y atemporal</p>
-                </h3>
-              </span></p>
+            <p><span><p><h1><strong>Estilo clásico</strong></h1></p>
+            <p><h3><em>"La elegancia perdura"</em></h3></p>
+            <p style="text-align:center; font-size: 1.5rem;">Patrones y detalles refinados y simétricos<br>
+              Inspirado en la arquitectura clásica y la antigüedad<br>Una decoración sofisticada y atemporal</p>
+            </span></p>
           </div>
         </div>
         <div class="carousel-item">
@@ -125,14 +115,11 @@
             <img src="./images/logo_grande.png" alt="Logo" />
           </div>
           <div class="descripcion">
-            <p><span>
-                <h1>Estilo costero</h1>
-                <h3><em>"Relajación en el mar"</em>
-                  <p>Colores claros, azules y blancos</p>
-                  <p>Inspirado en el mar y la playa</p>
-                  <p>Una decoración fresca y relajante</p>
-                </h3>
-              </span></p>
+            <p><span><p><h1><strong>Estilo costero</strong></h1></p>
+            <p><h3><em>"Relajación en el mar"</em></h3></p>
+            <p style="text-align:center; font-size: 1.5rem;">Colores claros, azules y blancos<br>
+              Inspirado en el mar y la playa<br>Una decoración fresca y relajante</p>
+            </span></p>
           </div>
         </div>
         <div class="carousel-item">
@@ -141,14 +128,11 @@
             <img src="./images/logo_grande.png" alt="Logo" />
           </div>
           <div class="descripcion">
-            <p><span>
-                <h1>Estilo contemporáneo</h1>
-                <h3><em>"Simplicidad con estilo"</em>
-                  <p>Líneas limpias y colores neutros</p>
-                  <p>Inspirado en el minimalismo y el diseño moderno</p>
-                  <p>Una decoración moderna y elegante</p>
-                </h3>
-              </span></p>
+            <p><span><p><h1><strong>Estilo contemporáneo</strong></h1></p>
+            <p><h3><em>"Simplicidad con estilo"</em></h3></p>
+            <p style="text-align:center; font-size: 1.5rem;">Líneas limpias y colores neutros<br>
+              Inspirado en el minimalismo y el diseño moderno<br>Una decoración moderna y elegante</p>
+            </span></p>
           </div>
         </div>
       </div>
@@ -955,6 +939,15 @@
     window.addEventListener('resize', () => {
       lastParagraph.style.marginBottom = scrollContainer.clientHeight - lastParagraph.clientHeight + 'px';
     });
+    // controlo que cuando salgo de la card se oculte la descripcion del estilo
+    const collapseCards = document.querySelectorAll('.card.collapse-card');
+    collapseCards.forEach(card => {
+      const collapseDiv = card.querySelector('.collapse');
+      card.addEventListener('focusout', () => {
+        collapseDiv.classList.remove('show');
+      });
+    });
+
     // desplazar el contenido
     function scrollUp() {
       const firstParagraph = paragraphs[0];
@@ -972,7 +965,7 @@
     // });
 
 
-    ///funcion para validar el formulario con los datos
+    ///funcion para validar los datos del formulario de contacto
     (() => {
       'use strict'
       const forms = document.querySelectorAll('.needs-validation')
@@ -991,30 +984,28 @@
 
     // funcion auxiliar para recorrer las secciones de la pagina 
     function goToSection(event) {
-      // Prevenir que el enlace recargue la página
-      event.preventDefault();
-      // Obtener la sección a la que se debe dirigir
-      const sectionId = this.getAttribute("href");
-
-      // Encontrar la posición de la sección en la página
-      const sectionPosition = document.querySelector(sectionId).offsetTop;
-
-      // Desplazar la página hasta la sección
-      window.scrollTo({
+      event.preventDefault(); // Prevenir que el enlace recargue la página      
+      const sectionId = this.getAttribute("href"); // Obtener la sección a la que se debe dirigir      
+      const sectionPosition = document.querySelector(sectionId).offsetTop; // Encontrar la posición de la sección en la página
+      window.scrollTo({                  // Desplazar la página hasta la sección
         top: sectionPosition,
         behavior: "smooth"
       });
     }
 
     // Agregar el evento click a todos los enlaces que tienen una sección como destino
-    const sectionLinks = document.querySelectorAll('a[href^="#"]');
+    const sectionLinks = document.querySelectorAll('a[href]');
     sectionLinks.forEach(link => {
-      link.addEventListener("click", goToSection);
+      if (!link.classList.contains('btn') && !link.classList.contains('btn-success')) {
+        link.addEventListener('click', goToSection);
+      }
     });
 
 
+
+
   </script>
-  <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
+
   <script src="./dist/js/bootstrap.min.js"></script>
 
 
