@@ -278,15 +278,67 @@ h1 {
 }
 
 
-
-
-@media only screen and (min-width: 768px) {
-  /* estilos para pantallas de 768px o más */
-  /* .image-container {
-    display: none;
-  } */
+@media only screen and (min-width: 992px) {
+  /* Estilos para dispositivos de escritorio */
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* estilos para pantallas entre 768px y 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  /* Estilos para tabletas */
+  .descripcion {
+    position: static;
+    background-color: transparent;
+    text-align: left;
+    padding: 10px;
+  }
+
+  #myCarousel .carousel-item img {
+    height: 300px;
+  }
+
+  #myCarousel .carousel-item .logo-container {
+    margin-top: 30px;
+  }
+
+  #myCarousel .carousel-item .descripcion {
+    padding-top: 30px;
+  }
+  /* para las card */
+  .col-3 {
+    /* width: 50%; */
+    column-count: auto;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* Estilos para celulares */
+  .descripcion {
+    position: static;
+    background-color: transparent;
+    text-align: left;
+    padding: 10px;
+  }
+
+  #myCarousel .carousel-item img {
+    height: 200px;
+  }
+
+  #myCarousel .carousel-item .logo-container {
+    margin-top: 20px;
+  }
+
+  #myCarousel .carousel-item .descripcion {
+    padding-top: 20px;
+    font-size: 1.2rem;
+  }
+
+  .col-3 {
+    /* width: 100%; */
+    column-count: 1;
+  }
+  .section {
+    padding: 0;
+  }
+
 }
